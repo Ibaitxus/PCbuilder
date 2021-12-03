@@ -17,7 +17,11 @@ float bannerWidth  = 1560,
 // Dimensions Columnes
 float columnWidth  = 505,
       columnHeight = 770;
+      
+float overviewWidth  = 1560,
+      overviewHeight = 770; 
 
+float editWidth = 
 
 // Zona Principal
 
@@ -55,7 +59,7 @@ float columnWidth  = 505,
   
   // Zona Columnes 1, 2 i 3
   
-  void drawColumnsZone() {
+  void drawColumnsZone(){
     
     fill(28,136,244);
     rect(2*marginH + sidebarWidth, 2*marginV + bannerHeight, columnWidth, columnHeight);
@@ -65,5 +69,17 @@ float columnWidth  = 505,
   
     fill(28,136,244);
     rect(4*marginH + sidebarWidth + 2*columnWidth, 2*marginV + bannerHeight, columnWidth, columnHeight);
+  }
+  
+  void drawOverviewZone (){
+    
+    fill(28,136,244);
+    rect(2*marginH + sidebarWidth, 2*marginV + logoHeight, overviewWidth, overviewHeight);
+    
+  }
+  
+  void drawEditZone (){
+  
+    
   }
   

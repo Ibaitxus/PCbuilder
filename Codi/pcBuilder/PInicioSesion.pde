@@ -1,6 +1,8 @@
 
 void pantallaInicioSesion(){
   
+  drawPrincipalZone();
+
   drawLogoZone();
   
 }
