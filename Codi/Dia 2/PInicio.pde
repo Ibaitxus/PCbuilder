@@ -1,0 +1,6 @@
+
+void pantallaInicio(){
+  
+  drawLogoZone();
+  
+}
