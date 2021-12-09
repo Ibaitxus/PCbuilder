@@ -1,5 +1,5 @@
 
-void pantallaPresupuesto(){
+void pantallaEditarEleccion(){
   
   drawPrincipalZone();
   
@@ -7,8 +7,8 @@ void pantallaPresupuesto(){
   
   drawSidebarZone();
   
-  drawOverviewZone ();
+  drawBannerZone();
   
-  drawOverviewBannerZone();
+  drawColumnsZone();
   
 }

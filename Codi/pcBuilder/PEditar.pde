@@ -8,4 +8,7 @@ void pantallaEditar(){
   drawSidebarZone();
   
   drawBannerZone();
+  
+  drawEditZone ();
+
 }

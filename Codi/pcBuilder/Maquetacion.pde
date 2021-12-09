@@ -4,7 +4,7 @@ float marginH = 20,
 
 // Dimensions Zona Lateral
 float sidebarWidth  = 300, 
-      sidebarHeight = 820;
+      sidebarHeight = 870;
 
 // Dimensions Logo
 float logoWidth  = 300, 
@@ -16,12 +16,14 @@ float bannerWidth  = 1560,
       
 // Dimensions Columnes
 float columnWidth  = 505,
-      columnHeight = 770;
+      columnHeight = 720;
       
-float overviewWidth  = 1560,
-      overviewHeight = 770; 
+// Dimensions PresupostBanner
+float overviewWidth  = 505,
+      overviewHeight = 240; 
 
-float editWidth = 
+float editWidth  = 1560,
+      editHeigth = 350;
 
 // Zona Principal
 
@@ -71,15 +73,39 @@ float editWidth =
     rect(4*marginH + sidebarWidth + 2*columnWidth, 2*marginV + bannerHeight, columnWidth, columnHeight);
   }
   
+  void drawOverviewBannerZone(){
+    
+    fill(16,60,133);
+    rect(2*marginH + logoWidth, marginV, bannerWidth, bannerHeight/2);
+  
+  }
   void drawOverviewZone (){
     
     fill(28,136,244);
     rect(2*marginH + sidebarWidth, 2*marginV + logoHeight, overviewWidth, overviewHeight);
+    rect(2*marginH + sidebarWidth, 3*marginV + logoHeight + overviewHeight, overviewWidth, overviewHeight);
+    rect(2*marginH + sidebarWidth, 4*marginV + logoHeight + 2*overviewHeight, overviewWidth, overviewHeight);
+
+  
+    fill(28,136,244);
+    rect(3*marginH + sidebarWidth + columnWidth, 2*marginV + logoHeight, overviewWidth, overviewHeight);
+    rect(3*marginH + sidebarWidth + columnWidth, 3*marginV + logoHeight + overviewHeight, overviewWidth, overviewHeight);
+    rect(3*marginH + sidebarWidth + columnWidth, 4*marginV + logoHeight + 2*overviewHeight, overviewWidth, overviewHeight);
+  
+    fill(28,136,244);
+    rect(4*marginH + sidebarWidth + 2*columnWidth, 2*marginV + logoHeight, overviewWidth, overviewHeight);
+    rect(4*marginH + sidebarWidth + 2*columnWidth, 3*marginV + logoHeight + overviewHeight, overviewWidth, overviewHeight);
+    rect(4*marginH + sidebarWidth + 2*columnWidth, 4*marginV + logoHeight + 2*overviewHeight, overviewWidth, overviewHeight);
     
   }
   
   void drawEditZone (){
-  
     
+  fill(28,136,244);
+  rect(2*marginH + sidebarWidth,2*marginV + bannerHeight,editWidth, editHeigth);
+  rect(2*marginH + sidebarWidth,3*marginV + bannerHeight + editHeigth,editWidth/2 - marginH, editHeigth);
+  rect(2*marginH + sidebarWidth + editWidth/2,3*marginV + bannerHeight + editHeigth,editWidth/2, editHeigth);
+
+
   }
   
