@@ -11,15 +11,16 @@ class Boton {
  boolean enabled;  // Abilitat / desabilitat
  
  // Mètode Constructor
- Boton(String text, float x, float y, float w, float h){
+ Boton(String text, float x, float y, float w, float h, color c){
    this.textBoto = text;
    this.x = x;
    this.y = y;
    this.w = w;
    this.h = h;
+   this.fillColor = c;
    this.enabled = true;
-   fillColor = color(155, 55, 155);
-   fillColorOver = color(255, 55, 155);
+   fillColor = c;
+   fillColorOver = color(220);
    fillColorDisabled = color(150);
    strokeColor = color(0);
  }
@@ -43,7 +44,7 @@ class Boton {
      fill(fillColor);          // Color actiu però ratolí fora
    }
    stroke(strokeColor); strokeWeight(2);        //Color i gruixa del contorn
-   rect(this.x, this.y, this.w, this.h, 10);    // Rectangle del botó
+   rect(this.x, this.y, this.w, this.h);    // Rectangle del botó
    
    // Text (color, alineació i mida)
    fill(0); textAlign(CENTER); textSize(20);
